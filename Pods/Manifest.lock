@@ -1,0 +1,40 @@
+PODS:
+  - Foursquare-API-v2 (HEAD based on 1.4.1):
+    - FSOAuth
+  - FSOAuth (1.0)
+  - GoogleAnalytics-iOS-SDK (3.0.2)
+  - HTAutocompleteTextField (HEAD based on 1.2.6)
+  - JazzHands (0.0.3)
+  - MBProgressHUD (HEAD based on 0.8)
+  - MKNetworkKit (HEAD based on 0.87):
+    - Reachability (~> 3.1.0)
+  - MPFoldTransition (HEAD based on 0.0.1)
+  - Reachability (3.1.1)
+  - TestFlightSDK (2.1.3)
+  - TTTAttributedLabel (HEAD based on 1.8.0)
+
+DEPENDENCIES:
+  - Foursquare-API-v2 (HEAD)
+  - GoogleAnalytics-iOS-SDK
+  - HTAutocompleteTextField (HEAD)
+  - JazzHands (= 0.0.3)
+  - MBProgressHUD (HEAD)
+  - MKNetworkKit (HEAD)
+  - MPFoldTransition (HEAD)
+  - TestFlightSDK (= 2.1.3)
+  - TTTAttributedLabel (HEAD)
+
+SPEC CHECKSUMS:
+  Foursquare-API-v2: ce644b05dd20198efc0c88f8d2dfcdd203635c27
+  FSOAuth: 8c590a8e7c716151b5d0f02b78e7b531ed64ff40
+  GoogleAnalytics-iOS-SDK: 86393b99f7328ae8d8e975fcaa8632a39dafafe8
+  HTAutocompleteTextField: 984cfc05a2dc8906ad5ce560f3a4c7a1bbf51b2f
+  JazzHands: 01a8a6e933746bc7a6c749bfd6ed95f2a91c91aa
+  MBProgressHUD: 2bbc6f470111daf7f3eaa4eb12b8cbf01c4c0622
+  MKNetworkKit: f174100f92473012138b6b1c3040266af8d43a14
+  MPFoldTransition: 65c1a3bcb5c8e5a179621f844e970666d89aa3a8
+  Reachability: be4883bb93f31e38266ae3365e5600a317aae735
+  TestFlightSDK: 7fa7962e63693780915fad0a4743e0febd5a4d17
+  TTTAttributedLabel: cc759a194a485c1fdf2446bf2ee7a55bada1f08d
+
+COCOAPODS: 0.29.0

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>3CB79BCB-4868-4016-B775-EF4E2FAA8375</string>
+	<key>IDESourceControlProjectName</key>
+	<string>FMag</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>320FF4FE-2E62-4827-B0CE-9FE0CCD4095A</key>
+		<string>ssh://github.com/rexstjohn/rexstjohn.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>iOS/FMag/FMag/FMag.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>320FF4FE-2E62-4827-B0CE-9FE0CCD4095A</key>
+		<string>../../../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>ssh://github.com/rexstjohn/rexstjohn.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>320FF4FE-2E62-4827-B0CE-9FE0CCD4095A</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>320FF4FE-2E62-4827-B0CE-9FE0CCD4095A</string>
+			<key>IDESourceControlWCCName</key>
+			<string>rexstjohn</string>
+		</dict>
+	</array>
+</dict>
+</plist>

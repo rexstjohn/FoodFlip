@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>B09C90C0-0697-40F5-BF33-E2E253716088</string>
+	<key>IDESourceControlProjectName</key>
+	<string>FoodFlip</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>D1FFE0F6-A165-44D9-A2C8-E8C4C4FB0EF5</key>
+		<string>ssh://github.com/rexstjohn/rexstjohn.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>iOS/FoodFlip/FoodFlip.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>D1FFE0F6-A165-44D9-A2C8-E8C4C4FB0EF5</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>ssh://github.com/rexstjohn/rexstjohn.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>D1FFE0F6-A165-44D9-A2C8-E8C4C4FB0EF5</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>D1FFE0F6-A165-44D9-A2C8-E8C4C4FB0EF5</string>
+			<key>IDESourceControlWCCName</key>
+			<string>rexstjohn</string>
+		</dict>
+	</array>
+</dict>
+</plist>

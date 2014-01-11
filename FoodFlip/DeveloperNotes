@@ -1,0 +1,44 @@
+README
+
+
+PROJECT STATUS
+
+
+
+
+FEATURES DESIRED / FUTURE ROADMAP
+
+-have a map mode / map screen mode
+-allow users to run pre-canned search filters (nearby, popular etc)
+-consider going with a single search bar instead of 2
+-better neighborhood, city autocomplete
+-full search autocomplete, get a common food search autocomplete file
+-Social features / sharing etc / rating other people
+-checkins...or something...
+-higher quality image data sources e.g. foodspotting
+-Integrate datasource switches e.g. user can switch between many data sources
+- Run on my own custom API so I can have better data quality control
+-Quick rating sheets - super fast, buttons and presses to rate restaurants
+-jazzhands tutorial (can integrate later)
+-iphone version to come later
+
+KNOWN BUGS
+
+-user has difficulty understanding they can change location by touching nearby
+-theming integration?
+-white line dividers appear wrong in table view between reviews
+-stars don't show up in landscape mode on ipad in top details cell
+-need to replace images with non-attributed images
+-too many autolayout and other warnings
+-analytics not integrated yet
+-images for icons are low quality
+-needs JazzHands tutorial
+-app crashes, low memory (probably images fill up the cache)
+-foursquare returns poor quality restaurant results
+-needs ability to handle enter background state
+-needs accessibility / dynamic font sizes
+
+ERROR HANDLING
+
+-need 'location not found / need location services enabled' dialog
+-need 'internet connectivity not found' dialog

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="4514" systemVersion="13B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="UXRRestaurantHoursTableViewCell"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="UXRRestaurantHoursTableViewCell" rowHeight="175" id="TjJ-A3-eJI" customClass="UXRRestaurantHoursTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="768" height="167"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="TjJ-A3-eJI" id="VcM-QA-mdS">
+                <rect key="frame" x="0.0" y="0.0" width="768" height="166"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hours of Operation" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MBg-je-uk8" customClass="UXRLabel">
+                        <rect key="frame" x="20" y="5" width="728" height="32"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="32" id="WRa-zK-5da"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="356" translatesAutoresizingMaskIntoConstraints="NO" id="hBH-XN-EeI" customClass="UXRLabel">
+                        <rect key="frame" x="20" y="51" width="356" height="95"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="304" translatesAutoresizingMaskIntoConstraints="NO" id="gJi-Qa-aHB" customClass="UXRLabel">
+                        <rect key="frame" x="444" y="51" width="304" height="95"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="MBg-je-uk8" secondAttribute="trailing" constant="20" id="0If-vG-kVo"/>
+                    <constraint firstItem="gJi-Qa-aHB" firstAttribute="leading" secondItem="hBH-XN-EeI" secondAttribute="trailing" constant="68" id="5tr-nP-FjS"/>
+                    <constraint firstItem="hBH-XN-EeI" firstAttribute="top" secondItem="MBg-je-uk8" secondAttribute="bottom" constant="14" id="8U9-RN-yaR"/>
+                    <constraint firstAttribute="trailing" secondItem="gJi-Qa-aHB" secondAttribute="trailing" constant="20" id="JKt-Fc-tBS"/>
+                    <constraint firstItem="MBg-je-uk8" firstAttribute="leading" secondItem="VcM-QA-mdS" secondAttribute="leading" constant="20" id="UES-Ls-m7j"/>
+                    <constraint firstItem="hBH-XN-EeI" firstAttribute="leading" secondItem="VcM-QA-mdS" secondAttribute="leading" constant="20" id="UcQ-wj-576"/>
+                    <constraint firstItem="gJi-Qa-aHB" firstAttribute="top" secondItem="MBg-je-uk8" secondAttribute="bottom" constant="8" id="dYt-de-Djt"/>
+                    <constraint firstItem="MBg-je-uk8" firstAttribute="top" secondItem="VcM-QA-mdS" secondAttribute="top" constant="5" id="eIa-Ee-4F2"/>
+                    <constraint firstItem="MBg-je-uk8" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="VcM-QA-mdS" secondAttribute="leading" constant="20" id="nDt-Dv-G1d"/>
+                    <constraint firstItem="MBg-je-uk8" firstAttribute="top" relation="greaterThanOrEqual" secondItem="VcM-QA-mdS" secondAttribute="top" constant="5" id="qCr-Gd-oha"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+            <connections>
+                <outlet property="hoursColumnOneLabel" destination="hBH-XN-EeI" id="rke-O2-6x8"/>
+                <outlet property="hoursColumnTwoLabel" destination="gJi-Qa-aHB" id="0j3-Io-s4t"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+</document>

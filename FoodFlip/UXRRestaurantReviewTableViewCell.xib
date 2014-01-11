@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="4514" systemVersion="13B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="UXRRestaurantPrimaryTableViewCell"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="UXRRestaurantReviewTableViewCell" rowHeight="130" id="lvI-i3-hLR" customClass="UXRRestaurantReviewTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="768" height="139"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="lvI-i3-hLR" id="lUL-5Z-VIe">
+                <rect key="frame" x="0.0" y="0.0" width="768" height="138"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="top" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="&quot;Delicious&quot;" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="730" translatesAutoresizingMaskIntoConstraints="NO" id="xQ5-Fb-IDa" customClass="UXRLabel">
+                        <rect key="frame" x="20" y="21" width="730" height="63"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="no_image.png" translatesAutoresizingMaskIntoConstraints="NO" id="2hM-1f-Tbq">
+                        <rect key="frame" x="20" y="92" width="40" height="40"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="40" id="b3Y-cK-QZG"/>
+                            <constraint firstAttribute="height" constant="40" id="hAN-69-lXd"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Janine" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qgb-BG-Xfm" customClass="UXRLabel">
+                        <rect key="frame" x="77" y="102" width="478" height="19"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="2hM-1f-Tbq" firstAttribute="leading" secondItem="lUL-5Z-VIe" secondAttribute="leading" constant="20" id="71e-9V-xKW"/>
+                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="2hM-1f-Tbq" secondAttribute="bottom" constant="6" id="7Ry-ev-gDz"/>
+                    <constraint firstItem="xQ5-Fb-IDa" firstAttribute="top" secondItem="lUL-5Z-VIe" secondAttribute="top" constant="9" id="9hy-r9-Iqb"/>
+                    <constraint firstItem="2hM-1f-Tbq" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="lUL-5Z-VIe" secondAttribute="leading" constant="20" id="FjR-At-usZ"/>
+                    <constraint firstAttribute="bottom" secondItem="2hM-1f-Tbq" secondAttribute="bottom" constant="6" id="MDE-fE-66K"/>
+                    <constraint firstAttribute="bottom" secondItem="qgb-BG-Xfm" secondAttribute="bottom" constant="17" id="PxD-6h-LQG"/>
+                    <constraint firstItem="qgb-BG-Xfm" firstAttribute="leading" secondItem="2hM-1f-Tbq" secondAttribute="trailing" constant="17" id="UHp-Yx-Swu"/>
+                    <constraint firstItem="qgb-BG-Xfm" firstAttribute="leading" secondItem="2hM-1f-Tbq" secondAttribute="trailing" constant="17" id="Ym8-0l-oWN"/>
+                    <constraint firstItem="2hM-1f-Tbq" firstAttribute="top" secondItem="xQ5-Fb-IDa" secondAttribute="bottom" constant="8" id="YoZ-BM-2Xr"/>
+                    <constraint firstItem="2hM-1f-Tbq" firstAttribute="top" secondItem="xQ5-Fb-IDa" secondAttribute="bottom" constant="8" id="ac3-QI-ayN"/>
+                    <constraint firstAttribute="trailing" secondItem="xQ5-Fb-IDa" secondAttribute="trailing" constant="18" id="e5Y-Gq-olO"/>
+                    <constraint firstItem="xQ5-Fb-IDa" firstAttribute="leading" secondItem="lUL-5Z-VIe" secondAttribute="leading" constant="20" id="s4X-G8-MAR"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+            <connections>
+                <outlet property="reviewTitleLabel" destination="xQ5-Fb-IDa" id="3W5-kH-Gic"/>
+                <outlet property="reviewerNameLabel" destination="qgb-BG-Xfm" id="7cK-R9-2Ea"/>
+                <outlet property="reviewerPhotoImageView" destination="2hM-1f-Tbq" id="IUG-kj-Qmb"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="no_image.png" width="200" height="200"/>
+    </resources>
+</document>
