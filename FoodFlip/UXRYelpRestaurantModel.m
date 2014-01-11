@@ -194,4 +194,8 @@
 -(NSString*)readibleCityStateString{
     return @"";
 }
+
+-(NSArray*)restaurantReviewsArray{
+    return @[];
+}
 @end

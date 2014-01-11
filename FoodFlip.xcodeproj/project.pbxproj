@@ -1800,9 +1800,7 @@
 				INFOPLIST_FILE = "$(SRCROOT)/FoodFlip/FoodFlip-Info.plist";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"/Users/rexstjohn/Desktop/rexstjohn/iOS/FoodFlip/AdMob/Add-ons/GoogleAnalyticsServicesiOS_3.02/GoogleAnalytics/Library",
-					"/Users/rexstjohn/Desktop/rexstjohn/iOS/FoodFlip/AdMob/Add-ons/GoogleAnalyticsServicesiOS_3.02",
-					/Users/rexstjohn/Desktop/rexstjohn/iOS/FoodFlip/AdMob,
+					"\"$(SOURCE_ROOT)/AdMob\"/**",
 				);
 				OTHER_CFLAGS = (
 					"$(inherited)",
@@ -1848,9 +1846,7 @@
 				INFOPLIST_FILE = "$(SRCROOT)/FoodFlip/FoodFlip-Info.plist";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"/Users/rexstjohn/Desktop/rexstjohn/iOS/FoodFlip/AdMob/Add-ons/GoogleAnalyticsServicesiOS_3.02/GoogleAnalytics/Library",
-					"/Users/rexstjohn/Desktop/rexstjohn/iOS/FoodFlip/AdMob/Add-ons/GoogleAnalyticsServicesiOS_3.02",
-					/Users/rexstjohn/Desktop/rexstjohn/iOS/FoodFlip/AdMob,
+					"\"$(SOURCE_ROOT)/AdMob\"/**",
 				);
 				OTHER_CFLAGS = (
 					"$(inherited)",

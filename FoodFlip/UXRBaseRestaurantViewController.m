@@ -84,10 +84,6 @@
                                                  name:MAP_BUTTON_REQUESTED_OPEN_NOTIFICATION
                                                object:nil];
     [[NSNotificationCenter defaultCenter] addObserver:self
-                                             selector:@selector(loadFilters:)
-                                                 name:FILTER_BUTTON_REQUESTED_OPEN_NOTIFICATION
-                                               object:nil];
-    [[NSNotificationCenter defaultCenter] addObserver:self
                                              selector:@selector(showPhotoViewer:)
                                                  name:PHOTO_WAS_SELECTED_NOTIFICATION
                                                object:nil];

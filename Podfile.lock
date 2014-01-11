@@ -15,7 +15,7 @@ PODS:
 
 DEPENDENCIES:
   - Foursquare-API-v2 (HEAD)
-  - GoogleAnalytics-iOS-SDK
+  - GoogleAnalytics-iOS-SDK (= 3.0.2)
   - HTAutocompleteTextField (HEAD)
   - JazzHands (= 0.0.3)
   - MBProgressHUD (HEAD)
