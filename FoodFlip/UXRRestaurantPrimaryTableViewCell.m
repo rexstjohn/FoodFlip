@@ -168,6 +168,6 @@
     CGContextRef ctx = UIGraphicsGetCurrentContext();
     [self.locationTextField addBottomBorderToRect:rect currentContext:ctx borderColor:[UIColor whiteColor] borderWidth:2.0f];
     [self.starBar setFrameX:20];
-    [self.starBar setFrameY:rect.size.height - self.starBar.sizeHeight - 20];
+    [self.starBar setFrameY:rect.size.height - self.starBar.sizeHeight - 30 - (self.starBar.frame.size.height / 2)];
 }
 @end

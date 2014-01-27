@@ -38,6 +38,9 @@
 
 @implementation UXRRestaurantTableViewController_iPhone
 
+static const CGFloat yOffset = 22.0f;
+static const CGFloat headerHeight = 80.0f;
+
 -(void)setUpFooter{
     
     // Add a footer advertisement.
@@ -51,6 +54,20 @@
     [self.adBanner loadRequestInRootViewController:self withDelegate:self];
 }
 
+-(void)setUpHeader{
+    
+    // Must destroy and recreated the header view on rotations or we get problems
+    // where the user cant touch the search bar.
+    if(self.tableView.tableHeaderView !=nil){
+        self.tableView.tableHeaderView = nil;
+    }
+    
+    // Header frame is adjusted for presence of a search bar, which is hidden.
+    CGRect headerFrame = CGRectMake(0, 0, self.view.frame.size.width, headerHeight);
+    self.headerView = [[UXRRestaurantHeaderView alloc] initWithFrame:headerFrame];
+    self.tableView.tableHeaderView = self.headerView;
+    [self scrollToTop];
+}
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
