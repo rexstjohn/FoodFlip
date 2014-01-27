@@ -31,7 +31,7 @@
     self.websiteLabel.text = [NSString stringWithFormat:@"%@",[model primaryRestaurantWebsiteURLPathString]];
     
     //
-    self.addressLabel.text = [NSString stringWithFormat:@"Address: %@ - %@",[model readibleAddressString],[model readibleCityStateString]];
+    self.addressLabel.text = [NSString stringWithFormat:@"%@ - %@",[model readibleAddressString],[model readibleCityStateString]];
     
     // Set the price.
     NSMutableString *priceString = [[NSMutableString alloc] init];

@@ -11,6 +11,7 @@
 #import "UXRSearchDataProvider.h"
 #import "UXRFourSquareDataManager.h"
 #import "UIView+AddBorderWithColor.h"
+#import "UIView+SimpleSizing.h"
 
 @interface UXRRestaurantPrimaryTableViewCell()
 @property(nonatomic,strong) NSArray *locations;
@@ -43,7 +44,8 @@
     self.preEditingText = self.locationTextField.text;
     
     // Stars
-    self.starBar = [[UXRStarBarView alloc] initWithFrame:self.starBar.frame];
+    CGFloat starWidth = (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad)?200:130;
+    self.starBar = [[UXRStarBarView alloc] initWithFrame:CGRectMake(20, starWidth, 130, starWidth/5)];
     [self addSubview:self.starBar];
 }
 
@@ -165,5 +167,7 @@
     [super drawRect:rect];
     CGContextRef ctx = UIGraphicsGetCurrentContext();
     [self.locationTextField addBottomBorderToRect:rect currentContext:ctx borderColor:[UIColor whiteColor] borderWidth:2.0f];
+    [self.starBar setFrameX:20];
+    [self.starBar setFrameY:rect.size.height - self.starBar.sizeHeight - 20];
 }
 @end

@@ -158,7 +158,7 @@
     self.backgroundImageCyclingView.topImageView.alpha = scrollAlpha;
     
     // If the user has scrolled down...
-    if(scrollAlpha <= 0.75f){
+    if(scrollAlpha <= 0.45f){
         [UIView animateWithDuration:0.25f animations:^{
             self.scrollToTopButton.alpha = 1;
         }];
