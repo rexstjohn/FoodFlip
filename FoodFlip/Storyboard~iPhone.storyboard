@@ -121,7 +121,7 @@
             </objects>
             <point key="canvasLocation" x="3189" y="-1098"/>
         </scene>
-        <!--Restaurant Table View Controller iP Hone-->
+        <!--Restaurant Table View Controller i Phone-->
         <scene sceneID="Tvg-US-KAo">
             <objects>
                 <tableViewController id="7Cg-wI-p1G" customClass="UXRRestaurantTableViewController_iPhone" sceneMemberID="viewController">
