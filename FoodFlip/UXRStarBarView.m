@@ -21,21 +21,37 @@
     return _viewIdentifier;
 }
 
+-(id)initWithFrame:(CGRect)frame{
+    self = [super initWithFrame:frame];
+    if(self){
+        
+        CGFloat padding = (frame.size.width * .2) / 5;
+        CGFloat starWidth = (frame.size.width - (padding * 5)) / 5;
+        CGRect starRect = CGRectMake(0, 0, starWidth, starWidth);
+        
+        self.starOne = [[UXRStarView alloc] initWithFrame:starRect];
+        self.starTwo = [[UXRStarView alloc] initWithFrame:starRect];
+        self.starThree = [[UXRStarView alloc] initWithFrame:starRect];
+        self.starFour = [[UXRStarView alloc] initWithFrame:starRect];
+        self.starFive = [[UXRStarView alloc] initWithFrame:starRect];
+        
+        self.stars = @[self.starOne,self.starTwo,self.starThree,self.starFour,self.starFive];
+        
+        int i = 5;
+        for(UXRStarView *star in self.stars){
+            CGFloat leftOffset = (i * starWidth) + (i * padding);
+            CGRect starRectOffset = CGRectMake(leftOffset - frame.size.width, 0, starWidth, starWidth);
+            [star setFrame:starRectOffset];
+            [self addSubview:star];
+            i ++;
+        }
+    }
+    return self;
+}
+
 -(void)awakeFromNib{
     [super awakeFromNib];
     self.backgroundColor = [UIColor clearColor];
-    
-    self.starOne = [[UXRStarView alloc] initWithFrame:self.starOne.frame];
-    self.starTwo = [[UXRStarView alloc] initWithFrame:self.starTwo.frame];
-    self.starThree = [[UXRStarView alloc] initWithFrame:self.starThree.frame];
-    self.starFour = [[UXRStarView alloc] initWithFrame:self.starFour.frame];
-    self.starFive = [[UXRStarView alloc] initWithFrame:self.starFive.frame];
-    
-    self.stars = @[self.starOne,self.starTwo,self.starThree,self.starFour,self.starFive];
-    
-    for(UXRStarView *star in self.stars){
-        [self addSubview:star];
-    }
 }
 
 -(void)setStarRating:(CGFloat)starRating{

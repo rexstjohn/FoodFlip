@@ -17,4 +17,7 @@
 @property (strong, nonatomic) IBOutlet UXRStarView *starFour;
 @property (strong, nonatomic) IBOutlet UXRStarView *starFive;
 @property (nonatomic,assign) CGFloat starRating;
+
+-(void)layoutStars;
+
 @end

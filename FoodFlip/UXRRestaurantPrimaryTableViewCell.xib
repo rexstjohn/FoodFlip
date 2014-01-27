@@ -44,13 +44,14 @@
                             <outlet property="delegate" destination="43v-vO-ish" id="Y4q-Hc-NHi"/>
                         </connections>
                     </textField>
-                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Lym-zQ-Xdz" customClass="UXRStarBarView">
+                    <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Lym-zQ-Xdz" customClass="UXRStarBarView">
                         <rect key="frame" x="20" y="953" width="214" height="32"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="width" constant="214" id="FW9-d9-1i3"/>
+                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="214" id="ARe-Zg-oWb"/>
                             <constraint firstAttribute="height" constant="32" id="PaG-l5-CZH"/>
+                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="32" id="eTn-ta-bfl"/>
                         </constraints>
                     </view>
                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Food" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vwN-SF-ZhT" customClass="UXRLabel">
