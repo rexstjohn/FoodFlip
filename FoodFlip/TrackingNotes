@@ -4,3 +4,5 @@ TRACKING NOTES
 - Search events
 - Share Events
 - Location Change Events
+
+Better to wire location search events in the networking engine
