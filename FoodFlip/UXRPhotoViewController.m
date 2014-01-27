@@ -61,10 +61,14 @@ CGFloat const kInitialZoomScale = 0.5f;
     [self.leftButton setBackgroundColor:[UIColor clearColor]];
     [self.rightButton setBackgroundColor:[UIColor clearColor]];
 }
+    
+-(void)viewDidAppear:(BOOL)animated{
+    [super viewDidAppear:animated];
+    self.screenName = @"Photo Viewer Screen";
+}
 
 -(void)viewWillAppear:(BOOL)animated{
     [super viewWillAppear:animated];
-    
     if(_photos != nil){
         dispatch_async(dispatch_get_main_queue(),^{
             [self setPhotoProperties];

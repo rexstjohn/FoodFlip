@@ -128,6 +128,7 @@
                                                    self.restaurants = restaurants;
                                                    [self onResultsDidUpdate];
                                                }
+                                               
                                          
         } failureBlock:^(NSError *error) {
             [self onUpdateFailed];

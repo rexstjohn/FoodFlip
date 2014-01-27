@@ -21,6 +21,11 @@
     [self.webView loadRequest:request];
 }
 
+-(void)viewDidAppear:(BOOL)animated{
+    [super viewDidAppear:animated];
+    self.screenName = @"Web View Screen";
+}
+
 -(void)navigateToURL:(NSURL*)url{
     self.urlToLoad = url;
 }

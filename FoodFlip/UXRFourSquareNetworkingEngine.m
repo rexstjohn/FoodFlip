@@ -163,6 +163,7 @@ static const NSString* DEFAULT_SECTION = @"food";
         NSDictionary *response = [json objectForKey:@"response"];
         NSArray* businesses = [response objectForKey:@"venues"];
         NSArray* models =[self renderJSONToFourSquareRestaurantModels:businesses];
+        [self eventWithAction:kSEARCHACTION withLabel:@"Restaurants Near Location" andValue:0];
         completionBlock(models);
     } errorHandler:^(MKNetworkOperation *completedOperation, NSError *error) {
         errorBlock(error);
@@ -209,6 +210,7 @@ static const NSString* DEFAULT_SECTION = @"food";
         
         NSDictionary *response = [json objectForKey:@"response"];
         UXRExploreQueryBaseModel* result =[[UXRExploreQueryBaseModel alloc] initWithDictionary:response];
+        [self eventWithAction:kSEARCHACTION withLabel:query andValue:0];
         completionBlock(result.venues);
     } errorHandler:^(MKNetworkOperation *completedOperation, NSError *error) {
         errorBlock(error);
@@ -258,6 +260,7 @@ static const NSString* DEFAULT_SECTION = @"food";
         
         NSDictionary *response = [json objectForKey:@"response"];
         UXRExploreQueryBaseModel* result =[[UXRExploreQueryBaseModel alloc] initWithDictionary:response];
+        [self eventWithAction:kSEARCHACTION withLabel:query andValue:0];
         completionBlock(result.venues);
     } errorHandler:^(MKNetworkOperation *completedOperation, NSError *error) {
         errorBlock(error);
@@ -292,6 +295,7 @@ static const NSString* DEFAULT_SECTION = @"food";
         NSDictionary *response = [json objectForKey:@"response"];
         NSDictionary *venue = [response objectForKey:@"venue"];
         UXRFourSquareRestaurantModel *restuarant = [[UXRFourSquareRestaurantModel alloc] initWithDictionary:venue];
+        [self eventWithAction:kSEARCHACTION withLabel:restuarant.name andValue:0];
         completionBlock(restuarant);
     } errorHandler:^(MKNetworkOperation *completedOperation, NSError *error) {
         errorBlock(error);

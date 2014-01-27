@@ -1,0 +1,6 @@
+TRACKING NOTES
+
+- All view controllers should have event tracking wired
+- Search events
+- Share Events
+- Location Change Events

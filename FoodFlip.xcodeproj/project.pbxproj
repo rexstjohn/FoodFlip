@@ -312,6 +312,10 @@
 		51BCC3261862647B0043AE91 /* UIImage+Colorize.m in Sources */ = {isa = PBXBuildFile; fileRef = 51BCC3251862647B0043AE91 /* UIImage+Colorize.m */; };
 		51BCC32A186265190043AE91 /* UXRLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 51BCC329186265190043AE91 /* UXRLabel.m */; };
 		51BCC33818627F100043AE91 /* UXRMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 51BCC33718627F100043AE91 /* UXRMapViewController.m */; };
+		51CB674D1895DFA9000FE769 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51CB674C1895DFA9000FE769 /* SystemConfiguration.framework */; };
+		51CB674F1895E2E3000FE769 /* TrackingNotes in Resources */ = {isa = PBXBuildFile; fileRef = 51CB674E1895E2E3000FE769 /* TrackingNotes */; };
+		51CB67521895E3AE000FE769 /* NSObject+GATracking.m in Sources */ = {isa = PBXBuildFile; fileRef = 51CB67511895E3AE000FE769 /* NSObject+GATracking.m */; };
+		51CB67531895E3AE000FE769 /* NSObject+GATracking.m in Sources */ = {isa = PBXBuildFile; fileRef = 51CB67511895E3AE000FE769 /* NSObject+GATracking.m */; };
 		51F573F21881C13400B85689 /* DeveloperNotes in Resources */ = {isa = PBXBuildFile; fileRef = 51F573F11881C13400B85689 /* DeveloperNotes */; };
 		51F573F51881C2D400B85689 /* UXRIntroTutorialViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 51F573F41881C2D400B85689 /* UXRIntroTutorialViewController.m */; };
 		51F573F61881C2D400B85689 /* UXRIntroTutorialViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 51F573F41881C2D400B85689 /* UXRIntroTutorialViewController.m */; };
@@ -624,6 +628,10 @@
 		51BCC329186265190043AE91 /* UXRLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UXRLabel.m; sourceTree = "<group>"; };
 		51BCC33618627F100043AE91 /* UXRMapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UXRMapViewController.h; sourceTree = "<group>"; };
 		51BCC33718627F100043AE91 /* UXRMapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UXRMapViewController.m; sourceTree = "<group>"; };
+		51CB674C1895DFA9000FE769 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		51CB674E1895E2E3000FE769 /* TrackingNotes */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = TrackingNotes; sourceTree = "<group>"; };
+		51CB67501895E3AE000FE769 /* NSObject+GATracking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+GATracking.h"; sourceTree = "<group>"; };
+		51CB67511895E3AE000FE769 /* NSObject+GATracking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+GATracking.m"; sourceTree = "<group>"; };
 		51F573F11881C13400B85689 /* DeveloperNotes */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = DeveloperNotes; sourceTree = "<group>"; };
 		51F573F31881C2D400B85689 /* UXRIntroTutorialViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UXRIntroTutorialViewController.h; sourceTree = "<group>"; };
 		51F573F41881C2D400B85689 /* UXRIntroTutorialViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UXRIntroTutorialViewController.m; sourceTree = "<group>"; };
@@ -636,6 +644,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				51CB674D1895DFA9000FE769 /* SystemConfiguration.framework in Frameworks */,
 				510ED7FC18765A6100FB1124 /* CoreData.framework in Frameworks */,
 				510ED7FA18765A5500FB1124 /* Accelerate.framework in Frameworks */,
 				5101115718752020008922A2 /* libz.dylib in Frameworks */,
@@ -812,6 +821,7 @@
 		51831E89185EC2F700C8989A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				51CB674C1895DFA9000FE769 /* SystemConfiguration.framework */,
 				510ED7FB18765A6100FB1124 /* CoreData.framework */,
 				510ED7F918765A5500FB1124 /* Accelerate.framework */,
 				5101115618752020008922A2 /* libz.dylib */,
@@ -862,6 +872,7 @@
 				51493BA1185EE10A00043A3F /* Storyboard~iPad.storyboard */,
 				519B07AC18654CF50027C69C /* Neighborhoods.txt */,
 				51F573F11881C13400B85689 /* DeveloperNotes */,
+				51CB674E1895E2E3000FE769 /* TrackingNotes */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -1003,6 +1014,8 @@
 				5101116D18760562008922A2 /* NSString+MetersToMiles.m */,
 				51011170187606A6008922A2 /* NSNumber+Rounding.h */,
 				51011171187606A6008922A2 /* NSNumber+Rounding.m */,
+				51CB67501895E3AE000FE769 /* NSObject+GATracking.h */,
+				51CB67511895E3AE000FE769 /* NSObject+GATracking.m */,
 			);
 			name = Categories;
 			sourceTree = "<group>";
@@ -1314,6 +1327,7 @@
 				51493BA0185EE0F800043A3F /* Storyboard~iPhone.storyboard in Resources */,
 				5101118B18760DB4008922A2 /* Icon-60@2x.png in Resources */,
 				510111A318760DB4008922A2 /* iTunesArtwork@2x.png in Resources */,
+				51CB674F1895E2E3000FE769 /* TrackingNotes in Resources */,
 				510111A61876188C008922A2 /* full_star.png in Resources */,
 				51ACFE74187374F000C98AED /* UXRAdTableViewCell.xib in Resources */,
 				51493BA2185EE10A00043A3F /* Storyboard~iPad.storyboard in Resources */,
@@ -1471,6 +1485,7 @@
 				510111471873BD80008922A2 /* UIImageView+CrossFade.m in Sources */,
 				511642FA186CE0ED00EF606B /* UXRExploreQueryBaseModel.m in Sources */,
 				517553901864EEAA000C2B20 /* UXRFourSquareRestaurantModel.m in Sources */,
+				51CB67521895E3AE000FE769 /* NSObject+GATracking.m in Sources */,
 				51A28A871863994D00B27355 /* CLLocation+Testing.m in Sources */,
 				51A05A65186900C90055A365 /* UXRFourSquareReservationsModel.m in Sources */,
 				51A28ABA18639B2900B27355 /* UXRYelpRestaurantLocationModel.m in Sources */,
@@ -1589,6 +1604,7 @@
 				511642FB186CE0ED00EF606B /* UXRExploreQueryBaseModel.m in Sources */,
 				51A28A4E18637A0B00B27355 /* UXRLocationDataManager.m in Sources */,
 				517553A91864FFB3000C2B20 /* UXRFourSquareDataManager.m in Sources */,
+				51CB67531895E3AE000FE769 /* NSObject+GATracking.m in Sources */,
 				51A28A961863994D00B27355 /* UIButton+Theming.m in Sources */,
 				5101115F18752A11008922A2 /* GADBannerView+SpecificToIdiom.m in Sources */,
 				51A28A8E1863994D00B27355 /* NSDictionary+PList.m in Sources */,

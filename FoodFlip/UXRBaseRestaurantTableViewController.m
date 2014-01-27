@@ -101,6 +101,11 @@ static const CGFloat headerHeight = 80.0f;
                                                  name:LOCATION_SEARCH_DID_END_EDITING_NOTIFICATION
                                                object:nil];
 }
+    
+-(void)viewDidAppear:(BOOL)animated{
+    [super viewDidAppear:animated];
+    self.screenName = @"Restaurant Table View Screen";
+}
 
 #pragma mark - Search and location updates
 
@@ -309,6 +314,7 @@ static const CGFloat headerHeight = 80.0f;
                                      withObject:nil
                                   waitUntilDone:YES];
     [self setUpHeader];
+    [self eventWithAction:@"Rotate Screen" withLabel:@"Restaurant Table" andValue:0];
 }
 
 #pragma mark - GADViewDelegate Methods

@@ -105,7 +105,7 @@
 
 -(void)viewDidAppear:(BOOL)animated{
     [super viewDidAppear:animated];
-    //
+    self.screenName = @"Restaurant View Screen";
 }
 
 -(void)viewDidDisappear:(BOOL)animated{
@@ -280,6 +280,8 @@ didSelectLinkWithAddress:(NSDictionary *)addressComponents{
 }
 
 -(void)didRecieveShareRequest:(NSNotification*)notification{
+    
+    [self eventWithAction:kSELECTACTION withLabel:@"Share Restaurant" andValue:0];
     NSString *textToShare = @"Check out this restaurant I found with FoodFlip!";
     NSString *titleToShare = [NSString stringWithFormat:@"%@, %@",[self.selectedRestaurant displayName], [self.selectedRestaurant readibleAddressString]];
     NSString *urlToShare = [self.selectedRestaurant primaryRestaurantWebsiteURLPathString];
