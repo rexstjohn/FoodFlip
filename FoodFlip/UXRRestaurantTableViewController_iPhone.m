@@ -30,12 +30,26 @@
 #import "GADBannerView+Request.h"
 #import "GADBannerView+SpecificToIdiom.h"
 #import <HTAutocompleteTextField/HTAutocompleteTextField.h>
+#import "UXRGlobals.h"
 
 @interface UXRRestaurantTableViewController_iPhone ()
 
 @end
 
 @implementation UXRRestaurantTableViewController_iPhone
+
+-(void)setUpFooter{
+    
+    // Add a footer advertisement.
+    self.adBanner = [GADBannerView bannerViewForCurrentIdiom];
+    self.adBanner.adUnitID = ADMOB_ADVERTISING_KEY;
+    self.adBanner.rootViewController = self;
+    UIView *adView = [[UIView alloc] initWithFrame:CGRectMake(0,0,self.view.frame.size.width, 200.0f)];
+    [adView addSubview:self.adBanner];
+    self.adBanner.center = adView.center;
+    self.tableView.tableFooterView = adView;
+    [self.adBanner loadRequestInRootViewController:self withDelegate:self];
+}
 
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -124,7 +138,7 @@
         id<UXRBaseReviewModel> review = (id<UXRBaseReviewModel>)[reviews objectAtIndex:indexPath.row];
         NSString *reviewTitle = [review reviewTitleText];
         CGFloat lineHeight = (reviewLabel.font.lineHeight );
-        CGFloat lines = (reviewTitle.length / 22.0f) * lineHeight;
+        CGFloat lines = (reviewTitle.length / 20.0f) * lineHeight;
         CGFloat height = lines + 80.0f;
         return height;
     }

@@ -36,7 +36,6 @@
 
 @interface UXRBaseRestaurantTableViewController ()
 @property(nonatomic,strong) NSArray *locations;
-@property(nonatomic,strong) GADBannerView *adBanner;
 @end
 
 @implementation UXRBaseRestaurantTableViewController
@@ -49,6 +48,10 @@ static const CGFloat headerHeight = 80.0f;
     [super viewDidLoad];
     self.tableView.backgroundColor = [UIColor clearColor];
     [self setUpHeader];
+    [self setUpFooter];
+}
+
+-(void)setUpFooter{
     
     // Add a footer advertisement.
     self.adBanner = [GADBannerView bannerViewForCurrentIdiom];

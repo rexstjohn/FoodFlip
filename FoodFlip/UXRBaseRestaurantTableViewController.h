@@ -38,12 +38,16 @@ typedef enum{
 @property(nonatomic,strong) id<UXRBaseRestaurantModel> restaurant;
 @property(nonatomic,strong) UITapGestureRecognizer *tapGesture;
 @property(nonatomic,strong) HTAutocompleteTextField *locationSearchLabel;
+@property(nonatomic,strong) GADBannerView *adBanner;
 
 // Used to toggle indicators.
 @property(nonatomic,assign) BOOL isLastRestaurant;
 @property(nonatomic,assign) BOOL isFirstRestaurant;
 
 //
+
+-(void)setUpFooter;
+-(void)setUpHeader;
 -(void)scrollToTop;
 
 //
