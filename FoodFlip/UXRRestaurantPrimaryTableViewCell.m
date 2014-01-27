@@ -44,7 +44,7 @@
     self.preEditingText = self.locationTextField.text;
     
     // Stars
-    CGFloat starWidth = (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad)?200:130;
+    CGFloat starWidth = (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad)?200:80;
     self.starBar = [[UXRStarBarView alloc] initWithFrame:CGRectMake(20, starWidth, 130, starWidth/5)];
     [self addSubview:self.starBar];
 }
