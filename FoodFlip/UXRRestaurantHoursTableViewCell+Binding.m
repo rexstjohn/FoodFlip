@@ -24,20 +24,33 @@
         self.hoursColumnOneLabel.text = @"No hours available";
     }
     
-    NSIndexSet *indexes;
-    if(hours.timeframes.count > 0){
-        int end = (hours.timeframes.count > 1)?2:1;
-        indexes = [NSIndexSet indexSetWithIndexesInRange:NSMakeRange(0, end)];
-        NSArray *firstHours = [hours.timeframes objectsAtIndexes:indexes];
-        [self addHours:firstHours toLabel:self.hoursColumnOneLabel];
+    if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad){
+        //iPad shows breaks
+        NSIndexSet *indexes;
+        if(hours.timeframes.count > 0){
+            int end = (hours.timeframes.count > 1)?2:1;
+            indexes = [NSIndexSet indexSetWithIndexesInRange:NSMakeRange(0, end)];
+            NSArray *firstHours = [hours.timeframes objectsAtIndexes:indexes];
+            [self addHours:firstHours toLabel:self.hoursColumnOneLabel];
+        }
+        
+        if(hours.timeframes.count > 2){
+            int end = (hours.timeframes.count > 3)?2:1;
+            indexes = [NSIndexSet indexSetWithIndexesInRange:NSMakeRange(2, end)];
+            NSArray *secondHours = [hours.timeframes objectsAtIndexes:indexes];
+            [self addHours:secondHours toLabel:self.hoursColumnTwoLabel];
+        }
+    } else {
+        // iPhone shows all hours vertically
+        NSIndexSet *indexes;
+        if(hours.timeframes.count > 0){
+            int end = hours.timeframes.count;
+            indexes = [NSIndexSet indexSetWithIndexesInRange:NSMakeRange(0, end)];
+            NSArray *firstHours = [hours.timeframes objectsAtIndexes:indexes];
+            [self addHours:firstHours toLabel:self.hoursColumnOneLabel];
+        }
     }
-
-    if(hours.timeframes.count > 2){
-        int end = (hours.timeframes.count > 3)?2:1;
-        indexes = [NSIndexSet indexSetWithIndexesInRange:NSMakeRange(2, end)];
-        NSArray *secondHours = [hours.timeframes objectsAtIndexes:indexes];
-        [self addHours:secondHours toLabel:self.hoursColumnTwoLabel];
-    }
+    
 }
 
 -(void)addHours:(NSArray*)hours toLabel:(UXRLabel*)label{

@@ -18,6 +18,9 @@
 #import "UXRBaseRestaurantDetailsTableViewCell.h"
 #import "UXRBaseRestaurantViewController.h"
 #import "UXRRestaurantReviewTableViewCell+Binding.h"
+#import "UXRBaseHoursModel.h"
+#import "UXRFourSquareRestaurantModel.h"
+#import "UXRBaseRestaurantModel.h"
 
 #import "UXRAttributedLabel.h"
 #import <TTTAttributedLabel/TTTAttributedLabel.h>
@@ -120,9 +123,8 @@
         NSArray *reviews =[self.restaurant restaurantReviewsArray];
         id<UXRBaseReviewModel> review = (id<UXRBaseReviewModel>)[reviews objectAtIndex:indexPath.row];
         NSString *reviewTitle = [review reviewTitleText];
-        
         CGFloat lineHeight = (reviewLabel.font.lineHeight );
-        CGFloat lines = (reviewTitle.length / 20.0f) * lineHeight;
+        CGFloat lines = (reviewTitle.length / 22.0f) * lineHeight;
         CGFloat height = lines + 80.0f;
         return height;
     }
