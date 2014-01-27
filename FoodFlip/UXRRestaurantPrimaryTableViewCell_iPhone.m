@@ -17,7 +17,10 @@
 }
 
 +(CGFloat)preferredCellHeight{
-    return 525.0f;
+    UIInterfaceOrientation orientation = [[UIApplication sharedApplication] statusBarOrientation];
+    CGRect screenRect = [[UIScreen mainScreen] bounds];
+    CGFloat screenHeight = (UIInterfaceOrientationIsLandscape(orientation) == NO)? screenRect.size.height: screenRect.size.width;
+    return screenHeight + 20;
 }
 
 @end

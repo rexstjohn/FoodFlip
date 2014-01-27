@@ -29,10 +29,9 @@ FEATURES DESIRED / FUTURE ROADMAP
 
 KNOWN BUGS
 
+-iphone 4" / 3.5" - top table cell needs to set height based on phone size
 -user has difficulty understanding they can change location by touching nearby
--theming integration?
 -white line dividers appear wrong in table view between reviews
--stars don't show up in landscape mode on ipad in top details cell
 -need to replace images with non-attributed images
 -too many autolayout and other warnings
 -analytics not integrated yet

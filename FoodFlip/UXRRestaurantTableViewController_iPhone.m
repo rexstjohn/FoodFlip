@@ -149,16 +149,30 @@ static const CGFloat headerHeight = 80.0f;
                 break;
         }
     } else {
+        
+        UIInterfaceOrientation orientation = [[UIApplication sharedApplication] statusBarOrientation];
+        CGFloat heightAdjustement = (UIInterfaceOrientationIsLandscape(orientation) == NO)?80:80;
+        CGFloat charactersPerLine = (UIInterfaceOrientationIsLandscape(orientation) == NO)?19:41;
+        
         UXRRestaurantReviewTableViewCell *cell = [UXRRestaurantReviewTableViewCell cellForTableView:tableView];
         UXRLabel *reviewLabel = cell.reviewTitleLabel;
         NSArray *reviews =[self.restaurant restaurantReviewsArray];
         id<UXRBaseReviewModel> review = (id<UXRBaseReviewModel>)[reviews objectAtIndex:indexPath.row];
         NSString *reviewTitle = [review reviewTitleText];
         CGFloat lineHeight = (reviewLabel.font.lineHeight );
-        CGFloat lines = (reviewTitle.length / 20.0f) * lineHeight;
-        CGFloat height = lines + 80.0f;
+        CGFloat lines = (reviewTitle.length / charactersPerLine) * lineHeight;
+        CGFloat height = lines + heightAdjustement;
         return height;
     }
 }
 
+#pragma mark - Rotations
+
+-(void)didRotateFromInterfaceOrientation:(UIInterfaceOrientation)fromInterfaceOrientation{
+    [self.tableView performSelectorOnMainThread:@selector(reloadData)
+                                     withObject:nil
+                                  waitUntilDone:YES];
+    [self setUpHeader];
+    [self eventWithAction:@"Rotate Screen" withLabel:@"Restaurant Table" andValue:0];
+}
 @end
