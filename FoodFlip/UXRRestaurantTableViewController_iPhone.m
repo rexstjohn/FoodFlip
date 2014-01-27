@@ -122,7 +122,7 @@
         NSString *reviewTitle = [review reviewTitleText];
         
         CGFloat lineHeight = (reviewLabel.font.lineHeight );
-        CGFloat lines = (reviewTitle.length / 25.0f) * lineHeight;
+        CGFloat lines = (reviewTitle.length / 20.0f) * lineHeight;
         CGFloat height = lines + 80.0f;
         return height;
     }
