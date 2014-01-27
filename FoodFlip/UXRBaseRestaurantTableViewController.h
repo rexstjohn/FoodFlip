@@ -36,6 +36,8 @@ typedef enum{
 @property(nonatomic,strong) id<UXRBaseRestaurantTableViewControllerDelegate> scrollDelegate;
 @property(nonatomic,strong) UXRRestaurantHeaderView *headerView;
 @property(nonatomic,strong) id<UXRBaseRestaurantModel> restaurant;
+@property(nonatomic,strong) UITapGestureRecognizer *tapGesture;
+@property(nonatomic,strong) HTAutocompleteTextField *locationSearchLabel;
 
 // Used to toggle indicators.
 @property(nonatomic,assign) BOOL isLastRestaurant;
@@ -43,6 +45,9 @@ typedef enum{
 
 //
 -(void)scrollToTop;
+
+//
+-(void)didTapTableView:(UITapGestureRecognizer*)tap;
 
 @end
 

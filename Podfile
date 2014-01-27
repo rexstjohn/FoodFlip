@@ -7,5 +7,4 @@ pod 'HTAutocompleteTextField', :head
 pod 'TTTAttributedLabel', :head
 pod 'MBProgressHUD', :head
 pod 'TestFlightSDK', '= 2.1.3'
-pod 'JazzHands', '= 0.0.3'
 pod 'GoogleAnalytics-iOS-SDK', '=3.0.2'

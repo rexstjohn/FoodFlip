@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="4514" systemVersion="13B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="UXRRestaurantHoursTableViewCell" rowHeight="175" id="D2u-Tq-AqU" customClass="UXRRestaurantHoursTableViewCell_iPhone">
+            <rect key="frame" x="0.0" y="0.0" width="768" height="167"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="D2u-Tq-AqU" id="IZI-n7-tLy">
+                <rect key="frame" x="0.0" y="0.0" width="768" height="166"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hours of Operation" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FuG-oj-TK9" customClass="UXRLabel">
+                        <rect key="frame" x="20" y="5" width="728" height="32"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="32" id="w91-Lp-dQr"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="356" translatesAutoresizingMaskIntoConstraints="NO" id="NjS-Ae-YEg" customClass="UXRLabel">
+                        <rect key="frame" x="20" y="51" width="356" height="95"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="304" translatesAutoresizingMaskIntoConstraints="NO" id="CvB-5e-eSS" customClass="UXRLabel">
+                        <rect key="frame" x="444" y="51" width="304" height="95"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="FuG-oj-TK9" firstAttribute="top" secondItem="IZI-n7-tLy" secondAttribute="top" constant="5" id="6G0-ni-foC"/>
+                    <constraint firstAttribute="trailing" secondItem="FuG-oj-TK9" secondAttribute="trailing" constant="20" id="8qV-Kf-E5F"/>
+                    <constraint firstItem="NjS-Ae-YEg" firstAttribute="top" secondItem="FuG-oj-TK9" secondAttribute="bottom" constant="14" id="8v4-W5-sZX"/>
+                    <constraint firstItem="FuG-oj-TK9" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="IZI-n7-tLy" secondAttribute="leading" constant="20" id="J7r-Ae-bBe"/>
+                    <constraint firstItem="NjS-Ae-YEg" firstAttribute="leading" secondItem="IZI-n7-tLy" secondAttribute="leading" constant="20" id="N5I-Ij-2XG"/>
+                    <constraint firstItem="FuG-oj-TK9" firstAttribute="leading" secondItem="IZI-n7-tLy" secondAttribute="leading" constant="20" id="dLw-VU-Gqc"/>
+                    <constraint firstItem="CvB-5e-eSS" firstAttribute="leading" secondItem="NjS-Ae-YEg" secondAttribute="trailing" constant="68" id="j4e-Xh-bi2"/>
+                    <constraint firstItem="CvB-5e-eSS" firstAttribute="top" secondItem="FuG-oj-TK9" secondAttribute="bottom" constant="8" id="nOD-31-xYI"/>
+                    <constraint firstAttribute="trailing" secondItem="CvB-5e-eSS" secondAttribute="trailing" constant="20" id="vOo-h9-eo8"/>
+                    <constraint firstItem="FuG-oj-TK9" firstAttribute="top" relation="greaterThanOrEqual" secondItem="IZI-n7-tLy" secondAttribute="top" constant="5" id="w6M-43-LTO"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+            <connections>
+                <outlet property="hoursColumnOneLabel" destination="NjS-Ae-YEg" id="cDw-d0-IMl"/>
+                <outlet property="hoursColumnTwoLabel" destination="CvB-5e-eSS" id="eRk-v6-Yje"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+</document>

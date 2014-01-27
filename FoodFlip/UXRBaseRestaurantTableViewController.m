@@ -37,8 +37,6 @@
 @interface UXRBaseRestaurantTableViewController ()
 @property(nonatomic,strong) NSArray *locations;
 @property(nonatomic,strong) GADBannerView *adBanner;
-@property(nonatomic,strong) UITapGestureRecognizer *tapGesture;
-@property(nonatomic,strong) HTAutocompleteTextField *locationSearchLabel;
 @end
 
 @implementation UXRBaseRestaurantTableViewController

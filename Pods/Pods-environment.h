@@ -30,12 +30,6 @@
 #define COCOAPODS_VERSION_MINOR_HTAutocompleteTextField 2
 #define COCOAPODS_VERSION_PATCH_HTAutocompleteTextField 6
 
-// JazzHands
-#define COCOAPODS_POD_AVAILABLE_JazzHands
-#define COCOAPODS_VERSION_MAJOR_JazzHands 0
-#define COCOAPODS_VERSION_MINOR_JazzHands 0
-#define COCOAPODS_VERSION_PATCH_JazzHands 3
-
 // MBProgressHUD
 #define COCOAPODS_POD_AVAILABLE_MBProgressHUD
 #define COCOAPODS_VERSION_MAJOR_MBProgressHUD 0

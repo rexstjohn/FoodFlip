@@ -133,6 +133,13 @@
 		5136C1EA18738787001B5C57 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51ACFE6B1873723400C98AED /* StoreKit.framework */; };
 		5136C1EB1873878D001B5C57 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 511A1491186E2F9200800F54 /* CoreText.framework */; };
 		5136C1EC1873878F001B5C57 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51BCC31F186248D90043AE91 /* MapKit.framework */; };
+		51428AA71895EAE4003EA137 /* UXRRestaurantMapAndDetailsTableViewCell_iPhone.m in Sources */ = {isa = PBXBuildFile; fileRef = 51428AA61895EAE4003EA137 /* UXRRestaurantMapAndDetailsTableViewCell_iPhone.m */; };
+		51428AA91895EB3A003EA137 /* UXRRestaurantMapAndDetailsTableViewCell_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 51428AA81895EB3A003EA137 /* UXRRestaurantMapAndDetailsTableViewCell_iPhone.xib */; };
+		51428AAC1895EC3C003EA137 /* UXRRestaurantPrimaryTableViewCell_iPhone.m in Sources */ = {isa = PBXBuildFile; fileRef = 51428AAB1895EC3C003EA137 /* UXRRestaurantPrimaryTableViewCell_iPhone.m */; };
+		51428AAE1895EC4F003EA137 /* UXRRestaurantPrimaryTableViewCell_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 51428AAD1895EC4F003EA137 /* UXRRestaurantPrimaryTableViewCell_iPhone.xib */; };
+		51428AB11895EDCF003EA137 /* UXRRestaurantHoursTableViewCell_iPhone.m in Sources */ = {isa = PBXBuildFile; fileRef = 51428AB01895EDCF003EA137 /* UXRRestaurantHoursTableViewCell_iPhone.m */; };
+		51428AB31895EDE5003EA137 /* UXRRestaurantHoursTableViewCell_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 51428AB21895EDE5003EA137 /* UXRRestaurantHoursTableViewCell_iPhone.xib */; };
+		51428AB71895F41E003EA137 /* UXRRestaurantTableViewController_iPhone.m in Sources */ = {isa = PBXBuildFile; fileRef = 51428AB51895EE64003EA137 /* UXRRestaurantTableViewController_iPhone.m */; };
 		51493B8C185EC7A400043A3F /* UXRJSONDeserializableObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 51493B8B185EC7A400043A3F /* UXRJSONDeserializableObject.m */; };
 		51493B8D185EC7A400043A3F /* UXRJSONDeserializableObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 51493B8B185EC7A400043A3F /* UXRJSONDeserializableObject.m */; };
 		51493B94185EC95C00043A3F /* UXRYelpTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 51493B93185EC95C00043A3F /* UXRYelpTests.m */; };
@@ -317,8 +324,6 @@
 		51CB67521895E3AE000FE769 /* NSObject+GATracking.m in Sources */ = {isa = PBXBuildFile; fileRef = 51CB67511895E3AE000FE769 /* NSObject+GATracking.m */; };
 		51CB67531895E3AE000FE769 /* NSObject+GATracking.m in Sources */ = {isa = PBXBuildFile; fileRef = 51CB67511895E3AE000FE769 /* NSObject+GATracking.m */; };
 		51F573F21881C13400B85689 /* DeveloperNotes in Resources */ = {isa = PBXBuildFile; fileRef = 51F573F11881C13400B85689 /* DeveloperNotes */; };
-		51F573F51881C2D400B85689 /* UXRIntroTutorialViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 51F573F41881C2D400B85689 /* UXRIntroTutorialViewController.m */; };
-		51F573F61881C2D400B85689 /* UXRIntroTutorialViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 51F573F41881C2D400B85689 /* UXRIntroTutorialViewController.m */; };
 		7E85D803436F485CB0A3C614 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CDD5BFB3584A42ACBF4843BC /* libPods.a */; };
 		9E80127E606349D8929BF1B4 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CDD5BFB3584A42ACBF4843BC /* libPods.a */; };
 /* End PBXBuildFile section */
@@ -425,6 +430,17 @@
 		512B8E8C186D594C00C55C6B /* UXRBaseHoursModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UXRBaseHoursModel.h; sourceTree = "<group>"; };
 		512E1124186F5E860088E414 /* UXRFourSquareAttributesModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UXRFourSquareAttributesModel.h; sourceTree = "<group>"; };
 		512E1125186F5E860088E414 /* UXRFourSquareAttributesModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UXRFourSquareAttributesModel.m; sourceTree = "<group>"; };
+		51428AA51895EAE4003EA137 /* UXRRestaurantMapAndDetailsTableViewCell_iPhone.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UXRRestaurantMapAndDetailsTableViewCell_iPhone.h; sourceTree = "<group>"; };
+		51428AA61895EAE4003EA137 /* UXRRestaurantMapAndDetailsTableViewCell_iPhone.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UXRRestaurantMapAndDetailsTableViewCell_iPhone.m; sourceTree = "<group>"; };
+		51428AA81895EB3A003EA137 /* UXRRestaurantMapAndDetailsTableViewCell_iPhone.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UXRRestaurantMapAndDetailsTableViewCell_iPhone.xib; sourceTree = "<group>"; };
+		51428AAA1895EC3C003EA137 /* UXRRestaurantPrimaryTableViewCell_iPhone.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UXRRestaurantPrimaryTableViewCell_iPhone.h; sourceTree = "<group>"; };
+		51428AAB1895EC3C003EA137 /* UXRRestaurantPrimaryTableViewCell_iPhone.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UXRRestaurantPrimaryTableViewCell_iPhone.m; sourceTree = "<group>"; };
+		51428AAD1895EC4F003EA137 /* UXRRestaurantPrimaryTableViewCell_iPhone.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UXRRestaurantPrimaryTableViewCell_iPhone.xib; sourceTree = "<group>"; };
+		51428AAF1895EDCF003EA137 /* UXRRestaurantHoursTableViewCell_iPhone.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UXRRestaurantHoursTableViewCell_iPhone.h; sourceTree = "<group>"; };
+		51428AB01895EDCF003EA137 /* UXRRestaurantHoursTableViewCell_iPhone.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UXRRestaurantHoursTableViewCell_iPhone.m; sourceTree = "<group>"; };
+		51428AB21895EDE5003EA137 /* UXRRestaurantHoursTableViewCell_iPhone.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UXRRestaurantHoursTableViewCell_iPhone.xib; sourceTree = "<group>"; };
+		51428AB41895EE64003EA137 /* UXRRestaurantTableViewController_iPhone.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UXRRestaurantTableViewController_iPhone.h; sourceTree = "<group>"; };
+		51428AB51895EE64003EA137 /* UXRRestaurantTableViewController_iPhone.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UXRRestaurantTableViewController_iPhone.m; sourceTree = "<group>"; };
 		51493B8A185EC7A400043A3F /* UXRJSONDeserializableObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UXRJSONDeserializableObject.h; sourceTree = "<group>"; };
 		51493B8B185EC7A400043A3F /* UXRJSONDeserializableObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UXRJSONDeserializableObject.m; sourceTree = "<group>"; };
 		51493B8E185EC81F00043A3F /* UXRJSONSerializableObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UXRJSONSerializableObject.h; sourceTree = "<group>"; };
@@ -633,8 +649,6 @@
 		51CB67501895E3AE000FE769 /* NSObject+GATracking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+GATracking.h"; sourceTree = "<group>"; };
 		51CB67511895E3AE000FE769 /* NSObject+GATracking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+GATracking.m"; sourceTree = "<group>"; };
 		51F573F11881C13400B85689 /* DeveloperNotes */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = DeveloperNotes; sourceTree = "<group>"; };
-		51F573F31881C2D400B85689 /* UXRIntroTutorialViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UXRIntroTutorialViewController.h; sourceTree = "<group>"; };
-		51F573F41881C2D400B85689 /* UXRIntroTutorialViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UXRIntroTutorialViewController.m; sourceTree = "<group>"; };
 		CDD5BFB3584A42ACBF4843BC /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		E828BE4F5C8B4D5FB2F8E041 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -727,8 +741,6 @@
 		5113F0521867871400BFD6E7 /* Base */ = {
 			isa = PBXGroup;
 			children = (
-				51F573F31881C2D400B85689 /* UXRIntroTutorialViewController.h */,
-				51F573F41881C2D400B85689 /* UXRIntroTutorialViewController.m */,
 				51BCC30D186223930043AE91 /* UXRBaseRestaurantViewController.h */,
 				51BCC30E186223930043AE91 /* UXRBaseRestaurantViewController.m */,
 				5113F0531867872000BFD6E7 /* UXRPhotoViewController.h */,
@@ -737,6 +749,41 @@
 				511642F4186CC40600EF606B /* UXRWebViewController.m */,
 			);
 			name = Base;
+			sourceTree = "<group>";
+		};
+		51428AA31895EA96003EA137 /* iPad */ = {
+			isa = PBXGroup;
+			children = (
+				5113F01E18677A9400BFD6E7 /* UXRRestaurantHoursTableViewCell.h */,
+				5113F01F18677A9400BFD6E7 /* UXRRestaurantHoursTableViewCell.m */,
+				5113F03118677B5500BFD6E7 /* UXRRestaurantHoursTableViewCell.xib */,
+				5113F02218677AB800BFD6E7 /* UXRRestaurantReviewTableViewCell.h */,
+				5113F02318677AB800BFD6E7 /* UXRRestaurantReviewTableViewCell.m */,
+				5113F03418677B7400BFD6E7 /* UXRRestaurantReviewTableViewCell.xib */,
+				5113F02618677ADF00BFD6E7 /* UXRRestaurantPrimaryTableViewCell.h */,
+				5113F02718677ADF00BFD6E7 /* UXRRestaurantPrimaryTableViewCell.m */,
+				5113F03718677B9900BFD6E7 /* UXRRestaurantPrimaryTableViewCell.xib */,
+				5113F02A18677B0B00BFD6E7 /* UXRRestaurantMapAndDetailsTableViewCell.h */,
+				5113F02B18677B0B00BFD6E7 /* UXRRestaurantMapAndDetailsTableViewCell.m */,
+				5113F03A18677BBB00BFD6E7 /* UXRRestaurantMapAndDetailsTableViewCell.xib */,
+			);
+			name = iPad;
+			sourceTree = "<group>";
+		};
+		51428AA41895EAB0003EA137 /* iPhone */ = {
+			isa = PBXGroup;
+			children = (
+				51428AA51895EAE4003EA137 /* UXRRestaurantMapAndDetailsTableViewCell_iPhone.h */,
+				51428AA61895EAE4003EA137 /* UXRRestaurantMapAndDetailsTableViewCell_iPhone.m */,
+				51428AA81895EB3A003EA137 /* UXRRestaurantMapAndDetailsTableViewCell_iPhone.xib */,
+				51428AAA1895EC3C003EA137 /* UXRRestaurantPrimaryTableViewCell_iPhone.h */,
+				51428AAB1895EC3C003EA137 /* UXRRestaurantPrimaryTableViewCell_iPhone.m */,
+				51428AAD1895EC4F003EA137 /* UXRRestaurantPrimaryTableViewCell_iPhone.xib */,
+				51428AAF1895EDCF003EA137 /* UXRRestaurantHoursTableViewCell_iPhone.h */,
+				51428AB01895EDCF003EA137 /* UXRRestaurantHoursTableViewCell_iPhone.m */,
+				51428AB21895EDE5003EA137 /* UXRRestaurantHoursTableViewCell_iPhone.xib */,
+			);
+			name = iPhone;
 			sourceTree = "<group>";
 		};
 		51493B95185ECC5400043A3F /* Utilities */ = {
@@ -1171,6 +1218,8 @@
 		51B1C6ED185FFDCF005AB3EF /* Table View Cells */ = {
 			isa = PBXGroup;
 			children = (
+				51428AA41895EAB0003EA137 /* iPhone */,
+				51428AA31895EA96003EA137 /* iPad */,
 				5113F03D18677F5000BFD6E7 /* Bindings */,
 				51B1C6EE185FFDF4005AB3EF /* UXRSmartTableViewCell.h */,
 				51B1C6EF185FFDF4005AB3EF /* UXRSmartTableViewCell.m */,
@@ -1179,18 +1228,6 @@
 				5113F01A18677A7400BFD6E7 /* UXRPhotoCarouselTableViewCell.h */,
 				5113F01B18677A7400BFD6E7 /* UXRPhotoCarouselTableViewCell.m */,
 				5113F02E18677B2A00BFD6E7 /* UXRPhotoCarouselTableViewCell.xib */,
-				5113F01E18677A9400BFD6E7 /* UXRRestaurantHoursTableViewCell.h */,
-				5113F01F18677A9400BFD6E7 /* UXRRestaurantHoursTableViewCell.m */,
-				5113F03118677B5500BFD6E7 /* UXRRestaurantHoursTableViewCell.xib */,
-				5113F02218677AB800BFD6E7 /* UXRRestaurantReviewTableViewCell.h */,
-				5113F02318677AB800BFD6E7 /* UXRRestaurantReviewTableViewCell.m */,
-				5113F03418677B7400BFD6E7 /* UXRRestaurantReviewTableViewCell.xib */,
-				5113F02618677ADF00BFD6E7 /* UXRRestaurantPrimaryTableViewCell.h */,
-				5113F02718677ADF00BFD6E7 /* UXRRestaurantPrimaryTableViewCell.m */,
-				5113F03718677B9900BFD6E7 /* UXRRestaurantPrimaryTableViewCell.xib */,
-				5113F02A18677B0B00BFD6E7 /* UXRRestaurantMapAndDetailsTableViewCell.h */,
-				5113F02B18677B0B00BFD6E7 /* UXRRestaurantMapAndDetailsTableViewCell.m */,
-				5113F03A18677BBB00BFD6E7 /* UXRRestaurantMapAndDetailsTableViewCell.xib */,
 				51ACFE6F187374DA00C98AED /* UXRAdTableViewCell.h */,
 				51ACFE70187374DA00C98AED /* UXRAdTableViewCell.m */,
 				51ACFE73187374F000C98AED /* UXRAdTableViewCell.xib */,
@@ -1214,6 +1251,8 @@
 			children = (
 				51BCC3101862261B0043AE91 /* UXRBaseRestaurantTableViewController.h */,
 				51BCC3111862261B0043AE91 /* UXRBaseRestaurantTableViewController.m */,
+				51428AB41895EE64003EA137 /* UXRRestaurantTableViewController_iPhone.h */,
+				51428AB51895EE64003EA137 /* UXRRestaurantTableViewController_iPhone.m */,
 			);
 			name = "Table View Controllers";
 			sourceTree = "<group>";
@@ -1345,13 +1384,16 @@
 				51BC6916186E61E600D5895F /* UXRStarBarView.xib in Resources */,
 				51BC690C186E5EEA00D5895F /* UXRStarView.xib in Resources */,
 				510111611875FEE6008922A2 /* stockfood1.jpg in Resources */,
+				51428AAE1895EC4F003EA137 /* UXRRestaurantPrimaryTableViewCell_iPhone.xib in Resources */,
 				510111671875FF0F008922A2 /* stockfood3.jpg in Resources */,
 				5101119B18760DB4008922A2 /* Icon-Small@2x.png in Resources */,
 				51ACFE5B1873719500C98AED /* README.txt in Resources */,
 				51831E9D185EC2F800C8989A /* Images.xcassets in Resources */,
 				519DAE331861433D009EBB9A /* image_1.jpg in Resources */,
+				51428AB31895EDE5003EA137 /* UXRRestaurantHoursTableViewCell_iPhone.xib in Resources */,
 				5101118718760DB4008922A2 /* Icon-40@2x.png in Resources */,
 				51F573F21881C13400B85689 /* DeveloperNotes in Resources */,
+				51428AA91895EB3A003EA137 /* UXRRestaurantMapAndDetailsTableViewCell_iPhone.xib in Resources */,
 				5113F02F18677B2A00BFD6E7 /* UXRPhotoCarouselTableViewCell.xib in Resources */,
 				519DAE341861433D009EBB9A /* image_2.jpg in Resources */,
 				5101119518760DB4008922A2 /* Icon-Small-50.png in Resources */,
@@ -1483,6 +1525,7 @@
 				510ED2F718764FDE00FB1124 /* UXRSearchDataProviderLocator.m in Sources */,
 				517FDF2518650EAF009E0250 /* UXRFourSquareHoursModel.m in Sources */,
 				510111471873BD80008922A2 /* UIImageView+CrossFade.m in Sources */,
+				51428AB71895F41E003EA137 /* UXRRestaurantTableViewController_iPhone.m in Sources */,
 				511642FA186CE0ED00EF606B /* UXRExploreQueryBaseModel.m in Sources */,
 				517553901864EEAA000C2B20 /* UXRFourSquareRestaurantModel.m in Sources */,
 				51CB67521895E3AE000FE769 /* NSObject+GATracking.m in Sources */,
@@ -1495,7 +1538,6 @@
 				5113F02818677ADF00BFD6E7 /* UXRRestaurantPrimaryTableViewCell.m in Sources */,
 				51A28AB11863994D00B27355 /* UIImageView+AsyncLoading.m in Sources */,
 				51164302186CE2AD00EF606B /* UXRFourSquareExploreResultsModel.m in Sources */,
-				51F573F51881C2D400B85689 /* UXRIntroTutorialViewController.m in Sources */,
 				51A28A911863994D00B27355 /* NSString+Utils.m in Sources */,
 				51A28AAF1863994D00B27355 /* UIImage+Compositing.m in Sources */,
 				51A05A61186900160055A365 /* UXRFourSquareMenuModel.m in Sources */,
@@ -1516,6 +1558,7 @@
 				51A28ABF1863BAAC00B27355 /* UXRBaseModel.m in Sources */,
 				51BCC32A186265190043AE91 /* UXRLabel.m in Sources */,
 				51A05A591868FEFB0055A365 /* UXRFourSquareStatsModel.m in Sources */,
+				51428AA71895EAE4003EA137 /* UXRRestaurantMapAndDetailsTableViewCell_iPhone.m in Sources */,
 				51A28AC91863DB5000B27355 /* UXRYelpReviewModel.m in Sources */,
 				517553A41864FC3A000C2B20 /* UXRFourSquareUserModel.m in Sources */,
 				51A28A9F1863994D00B27355 /* UIImage+Cropping.m in Sources */,
@@ -1532,6 +1575,7 @@
 				5113F059186787EF00BFD6E7 /* UIViewController+SlideTransitions.m in Sources */,
 				511642F5186CC40600EF606B /* UXRWebViewController.m in Sources */,
 				5101115A187528BD008922A2 /* GADBannerView+Request.m in Sources */,
+				51428AAC1895EC3C003EA137 /* UXRRestaurantPrimaryTableViewCell_iPhone.m in Sources */,
 				5113F02C18677B0B00BFD6E7 /* UXRRestaurantMapAndDetailsTableViewCell.m in Sources */,
 				5113F0551867872000BFD6E7 /* UXRPhotoViewController.m in Sources */,
 				5113F0441867806800BFD6E7 /* UXRRestaurantPrimaryTableViewCell+Binding.m in Sources */,
@@ -1581,6 +1625,7 @@
 				5113F01C18677A7400BFD6E7 /* UXRPhotoCarouselTableViewCell.m in Sources */,
 				511642FE186CE11D00EF606B /* UXRFourSquareGeoCodeModel.m in Sources */,
 				51A28A8F1863994D00B27355 /* NSString+Location.m in Sources */,
+				51428AB11895EDCF003EA137 /* UXRRestaurantHoursTableViewCell_iPhone.m in Sources */,
 				510ED83E18765FF400FB1124 /* main.m in Sources */,
 				51A28A4D18637A0B00B27355 /* UXRLocationDataManager.m in Sources */,
 			);
@@ -1630,7 +1675,6 @@
 				51831EC0185EC4B000C8989A /* UXRDefaultTheme.m in Sources */,
 				51A28A861863994D00B27355 /* CLLocation+isEmpty.m in Sources */,
 				5113F05E18678A3000BFD6E7 /* UXRBaseRestaurantDetailsTableViewCell.m in Sources */,
-				51F573F61881C2D400B85689 /* UXRIntroTutorialViewController.m in Sources */,
 				51A28A56186393AF00B27355 /* UXRYelpRestaurantModel.m in Sources */,
 				51A05A721869036A0055A365 /* UXRFourSquareLikesModel.m in Sources */,
 				51A28AA01863994D00B27355 /* UIImage+Cropping.m in Sources */,
@@ -1836,7 +1880,7 @@
 				);
 				PRODUCT_NAME = FoodFlip;
 				PROVISIONING_PROFILE = "";
-				TARGETED_DEVICE_FAMILY = 2;
+				TARGETED_DEVICE_FAMILY = "1,2";
 				USER_HEADER_SEARCH_PATHS = "";
 				VALID_ARCHS = "armv7 armv7s";
 				WRAPPER_EXTENSION = app;
@@ -1884,7 +1928,7 @@
 				);
 				PRODUCT_NAME = FoodFlip;
 				PROVISIONING_PROFILE = "";
-				TARGETED_DEVICE_FAMILY = 2;
+				TARGETED_DEVICE_FAMILY = "1,2";
 				USER_HEADER_SEARCH_PATHS = "";
 				VALID_ARCHS = "armv7 armv7s";
 				WRAPPER_EXTENSION = app;

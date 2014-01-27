@@ -21,7 +21,6 @@
 #import <TTTAttributedLabel/TTTAttributedLabel.h>
 #import "MBProgressHUD.h"
 #import <MPFoldTransition/MPFlipSegue.h>
-#import "UXRIntroTutorialViewController.h"
 
 @interface UXRBaseRestaurantViewController ()
 @property(nonatomic,strong) UXRBaseRestaurantTableViewController *restaurantTableViewController;
