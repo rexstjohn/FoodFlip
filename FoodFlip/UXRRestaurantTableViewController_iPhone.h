@@ -8,6 +8,6 @@
 
 #import "UXRBaseRestaurantTableViewController.h"
 
-@interface UXRRestaurantTableViewController_iPhone : UXRBaseRestaurantTableViewController<UITableViewDataSource,UITableViewDelegate, GADBannerViewDelegate>
+@interface UXRRestaurantTableViewController_iPhone : UXRBaseRestaurantTableViewController
 
 @end

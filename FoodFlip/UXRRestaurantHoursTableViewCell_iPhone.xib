@@ -6,7 +6,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="UXRRestaurantHoursTableViewCell" rowHeight="175" id="D2u-Tq-AqU" customClass="UXRRestaurantHoursTableViewCell_iPhone">
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="UXRRestaurantHoursTableViewCell_iPhone" rowHeight="175" id="D2u-Tq-AqU" customClass="UXRRestaurantHoursTableViewCell_iPhone">
             <rect key="frame" x="0.0" y="0.0" width="768" height="167"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="D2u-Tq-AqU" id="IZI-n7-tLy">
