@@ -1,13 +1,13 @@
 //
 //  MapKitUtilities.h
-//  urbanspin
+//  UXRX
 //
 //  Created by JASON CROSS on 7/9/13.
-//  Copyright (c) 2013 Urbanspoon. All rights reserved.
+//  Copyright (c) 2013 UXRX. All rights reserved.
 //
 
-#ifndef urbanspin_MapKitUtilities_h
-#define urbanspin_MapKitUtilities_h
+#ifndef UXRX_MapKitUtilities_h
+#define UXRX_MapKitUtilities_h
 
 static inline MKMapRect mapRectForCoordinateRegion(MKCoordinateRegion coordinateRegion) {
     CLLocationCoordinate2D topLeftCoordinate =

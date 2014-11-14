@@ -1,12 +1,12 @@
 //
 //  UIImageView+AsyncLoading.h
-//  urbanspin
+//  UXRX
 //
 //  This is a special image view loading type that displays a placeholder image and spinner while performing
 //  an async image download from a list or other view.
 //
 //  Created by Rex St John on 1/18/13.
-//  Copyright (c) 2013 Urbanspoon. All rights reserved.
+//  Copyright (c) 2013 UXRX. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>

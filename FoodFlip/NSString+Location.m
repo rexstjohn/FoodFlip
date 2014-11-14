@@ -1,9 +1,9 @@
 //
 //  NSString+Location.m
-//  urbanspin
+//  UXRX
 //
 //  Created by Rex St John on 10/18/12.
-//  Copyright (c) 2012 Urbanspoon. All rights reserved.
+//  Copyright (c) 2012 UXRX. All rights reserved.
 //
 
 #import "NSString+Location.h"

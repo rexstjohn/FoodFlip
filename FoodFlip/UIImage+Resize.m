@@ -1,9 +1,9 @@
 //
 //  UIImage+Resize.m
-//  urbanspin
+//  UXRX
 //
 //  Created by Jason Cross on 5/14/13.
-//  Copyright (c) 2013 Urbanspoon. All rights reserved.
+//  Copyright (c) 2013 UXRX. All rights reserved.
 //
 
 #import "UIImage+Resize.h"

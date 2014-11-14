@@ -1,9 +1,9 @@
 //
 //  UIViewController+SlideTransitions.h
-//  urbanspin
+//  UXRX
 //
 //  Created by Rex St John on 1/23/13.
-//  Copyright (c) 2013 Urbanspoon. All rights reserved.
+//  Copyright (c) 2013 . All rights reserved.
 //
 
 #import <UIKit/UIKit.h>

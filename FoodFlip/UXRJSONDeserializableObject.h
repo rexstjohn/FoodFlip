@@ -22,7 +22,7 @@
 /*!
  @method
  dateFromJSONDateString:
- Dates will be converted to match the format expected by UrbanSpoon's API:
+ Dates will be converted to match the format expected by UXRX's API:
  Time (UTC).  ISO 8601 format YYYY-MM-DDThh:mm:ssZ, which is JSON standard
  @param
  jsonDate

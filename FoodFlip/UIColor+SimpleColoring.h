@@ -1,9 +1,9 @@
 //
 //  UIColor+SimpleColoring.h
-//  urbanspin
+//  UXRX
 //
 //  Created by Rex St John on 1/18/13.
-//  Copyright (c) 2013 Urbanspoon. All rights reserved.
+//  Copyright (c) 2013 UXRX. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
